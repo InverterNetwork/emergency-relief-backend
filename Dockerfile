@@ -13,7 +13,7 @@ RUN npm run build
 
 FROM node:18-alpine
 
-RUN apk add --no-cache --update tini
+RUN apk add --no-cache --update bash
 
 WORKDIR /usr/src/app
 
@@ -25,6 +25,5 @@ COPY --from=BUILD_IMAGE /usr/src/app/dist ./dist
 
 EXPOSE 3000
 
-ENTRYPOINT ["/sbin/tini", "--"]
-
-CMD ["npm", "run", "start:prod"]
+# CMD /bin/sh -c "npx prisma migrate deploy && npm run start:prod"
+CMD /bin/sh -c "npm run start:prod"
