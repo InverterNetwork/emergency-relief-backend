@@ -1,0 +1,141 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator erd {
+  provider = "prisma-erd-generator"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model OrganizationWallet {
+  id Int @id @default(autoincrement())
+
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  organizationId Int          @map("organization_id")
+
+  chain   String
+  chainId Int    @map("chain_id")
+  address String
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("organization_wallets")
+}
+
+model Organization {
+  id Int @id @default(autoincrement())
+
+  name            String
+  profileImageUrl String? @map("profile_image_url")
+  bannerImageUrl  String? @map("banner_image_url")
+
+  projects Project[]
+  wallets  OrganizationWallet[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("organizations")
+}
+
+model ProjectDonationWallet {
+  id Int @id @default(autoincrement())
+
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int     @map("project_id")
+
+  chain   String
+  chainId Int    @map("chain_id")
+  address String
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("project_donation_wallets")
+}
+
+enum SocialProfilePlatform {
+  TWITTER
+  INSTAGRAM
+  LINKEDIN
+}
+
+model ProjectSocialProfile {
+  id Int @id @default(autoincrement())
+
+  platform   SocialProfilePlatform
+  profileUrl String                @map("profile_url")
+
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int     @map("project_id")
+
+  @@map("project_social_profiles")
+}
+
+model ProjectCredentials {
+  id Int @id @default(autoincrement())
+
+  statement     String
+  credentialUrl String @map("credential_url")
+
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int     @map("project_id")
+
+  @@map("project_credentials")
+}
+
+model ProjectCategory {
+  id Int @id @default(autoincrement())
+
+  category String
+
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int     @map("project_id")
+
+  @@map("project_categories")
+}
+
+model ProjectPartner {
+  id Int @id @default(autoincrement())
+
+  name       String
+  websiteUrl String @map("website_url")
+
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int     @map("project_id")
+
+  @@map("project_partners")
+}
+
+model Project {
+  id Int @id @default(autoincrement())
+
+  owner   Organization @relation(fields: [ownerId], references: [id])
+  ownerId Int          @map("owner_id")
+
+  name        String
+  description String
+  summary     String
+  website     String
+
+  logoImageUrl   String? @map("logo_image_url")
+  bannerImageUrl String? @map("banner_image_url")
+
+  impactLocation String? @map("impact_location")
+
+  donationWallets ProjectDonationWallet[]
+  socialProfiles  ProjectSocialProfile[]
+  credentials     ProjectCredentials[]
+  categories      ProjectCategory[]
+  partners        ProjectPartner[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("projects")
+}

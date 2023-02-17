@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Ahbap Association",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"ethereum\\\", \\\"symbol\\\": \\\"ETH\\\", \\\"address\\\": \\\"0xe1935271D1993434A1a59fE08f24891Dc5F398Cd\\\"}\",\"{\\\"chain\\\": \\\"binance smart chain\\\", \\\"symbol\\\": \\\"BNB\\\", \\\"address\\\": \\\"0xB67705398fEd380a1CE02e77095fed64f8aCe463\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"0x868D27c361682462536DfE361f2e20B3A6f4dDD8\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:36:52",
+    "updatedAt": "2023-02-15 11:36:43"
+  },
+  {
+    "id": 2,
+    "name": "Basic Needs Association (TIDER)",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"Bc1qv5h603jjzhahtlyvarnkxcldjh0r852q8hpzr2j0wf9eemt43kfsasz7p9\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0xf4016873Cca7c516CE2e5659Ccbb55b2E7AC58c9\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TWQjebuyZD5o1HhJEuAUijbj152KQCzXrA\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:38:12.791",
+    "updatedAt": "2023-02-15 11:38:08"
+  },
+  {
+    "id": 3,
+    "name": "Community Volunteers Foundation",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x9b40f98ccc326beaa0bfb94cfa8bfc6383a267e5\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TCJ2qvKJsXE4XZD2VcyeppDWmZUGfLShMm\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:38:54.587",
+    "updatedAt": "2023-02-15 11:38:24"
+  },
+  {
+    "id": 4,
+    "name": "Needs Map",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0xbe4cde5eeeed1f0a97a9457f6ef5b71eae108652\\\"}\",\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"3PkihQfm6doGW41uZ5Q9GFNw6XpEK5g9Vk\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TUAum5Q3GWZvzsS1yQaDdjkDAzp3HbvKTT\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"X-avax1e9mg0ryutzt869m7n4k2lxlkthdauszem7gu3q\\\"}\",\"{\\\"chain\\\": \\\"solana\\\", \\\"address\\\": \\\"Fjo5AeFMbUD6gjoWKbVuMXRcPsjpXKksjKLxPFuXQhaK\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:39:50",
+    "updatedAt": "2023-02-15 11:39:04"
+  },
+  {
+    "id": 5,
+    "name": "Support To Life",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"3KiXAfrSRH2yrcNGTy6TDrW4WyHdiRAeU5\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x9842453c14f3d0eda2073259a258ee2bdee827a8\\\"}\",\"{\\\"chain\\\": \\\"polygon\\\", \\\"address\\\": \\\"0x9842453c14f3d0eda2073259a258ee2bdee827a8\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"X-avax19ct5xw2ft6zka0u6rapzce60j2pztt92dntz2z\\\"}\",\"{\\\"chain\\\": \\\"solana\\\", \\\"address\\\": \\\"GgVMLWkTa2RCfyYAvuWvJKtK4br328hsM9ZTuvYTh39V\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TD9BcpkuG5sqGHCn45WEkB3w9pbQrceHg7\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:40:50.918",
+    "updatedAt": "2023-02-15 11:39:58"
+  },
+  {
+    "id": 6,
+    "name": "AKUT",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"Bc1qd7lw5ntzme45ej2y3wetr8zzaqpe68fj9t3trtpurwh9g3qrs0as4lw6lg\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x3b816b03B9b6b46376D5423C62aFBb311ff9218F\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TGuzb2kjX9kNgCuay6qNpV49W8mawmeGBs\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"X-avax1u60cj9cugua39kfysng98ht4la20qs4ke8au20\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:41:56.679",
+    "updatedAt": "2023-02-15 11:41:18"
+  },
+  {
+    "id": 7,
+    "name": "Foundation For The Support of Women’s Work",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"38gamXVGr7CqHKedeLu3fdTtmPzA2kgNtM\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x307efd869e7c6ce8308ff2f8b999e17b64f27b4c\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"X-avax1uch76pculzajk7np64h23ckslwdfa4lrc80nct\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TYofnJGV7jjVLff65x3147D5wenMcibQRN\\\"}\",\"{\\\"chain\\\": \\\"solana\\\", \\\"address\\\": \\\"56zuaUkveguQfwKYiaj1qHkBpPwcApo8YR9asG96xbEb\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:42:59.637",
+    "updatedAt": "2023-02-15 11:42:08"
+  },
+  {
+    "id": 8,
+    "name": "Republic of Turkey Ministry for Interior Disaster and Emergency Management Presidency (AFAD)",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"polygon\\\", \\\"address\\\": \\\"0x50bf7ea1fdd648bf6212a4cd0ad4c69f23327eca\\\"}\",\"{\\\"chain\\\": \\\"solana\\\", \\\"address\\\": \\\"3UmF5PRq1fiecKXhpzChz1uMVuwFRSbrfuYS5iQdhEsa\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x50bf7ea1fdd648bf6212a4cd0ad4c69f23327eca\\\"}\",\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"39wWXD4ce4sDvgfE7wVZrWuUdHqQRcP8wt\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"X-avax1l0kad6q7ldyfndtan4tedvgxnxwpy7jgqjvl9e\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TQX88br1H9ToAKQWX288dLQShbSSQn2EwY\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:43:51.505",
+    "updatedAt": "2023-02-15 11:43:48"
+  },
+  {
+    "id": 9,
+    "name": "Turkish Red Crescent",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"Bc1qe5vk78kmzq3v9xry3c9w7u09g0q9fvhsvuvsq5t6lvzfzatsdygs2whz3u\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x1fc82b7a62c0414163A332693Ec66EC91f4cd1dE\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TWyAHQNttueddv5Hp9B1dAnBVrDNqBjrCo\\\"}\",\"{\\\"chain\\\": \\\"avalanche\\\", \\\"address\\\": \\\"X-avax1a4w3ld27ga4flznmkt5hpvm4karc0njfl85lws\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:44:27.771",
+    "updatedAt": "2023-02-15 11:44:01"
+  },
+  {
+    "id": 10,
+    "name": "UNICEF Türkiye",
+    "wallet_addresses": "[\"{\\\"chain\\\": \\\"bitcoin\\\", \\\"address\\\": \\\"36h4o3mqLfm5xD6f92qEeXvxUbuYG1VnaT\\\"}\",\"{\\\"chain\\\": \\\"ethereum\\\", \\\"address\\\": \\\"0x93d9ef15f0b410abcbb599d2e6acc1afad97363f\\\"}\",\"{\\\"chain\\\": \\\"tron\\\", \\\"address\\\": \\\"TWdMUR43UnZ29NGowVMi6qK4NxussAi2RZ\\\"}\"]",
+    "profile_image_url": null,
+    "banner_image_url": null,
+    "createdAt": "2023-02-15 08:45:28.576",
+    "updatedAt": "2023-02-15 11:44:41"
+  }
+]
