@@ -1,6 +1,8 @@
-FROM node:18-alpine AS BUILD_IMAGE
+FROM node:18-alpine
 
 WORKDIR /usr/src/app
+
+RUN apk add --no-cache --update bash
 
 COPY package.json package-lock.json ./
 
@@ -9,18 +11,6 @@ RUN npm ci
 COPY . .
 
 RUN npx prisma generate && npm run build
-
-FROM node:18-alpine
-
-RUN apk add --no-cache --update bash
-
-WORKDIR /usr/src/app
-
-COPY package.json package-lock.json ./
-
-RUN npm ci
-
-COPY --from=BUILD_IMAGE /usr/src/app/dist ./dist
 
 EXPOSE 3000
 
