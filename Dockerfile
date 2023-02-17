@@ -8,8 +8,7 @@ RUN npm ci
 
 COPY . .
 
-RUN npm run build
-
+RUN npx prisma migrate deploy && npm run build
 
 FROM node:18-alpine
 
@@ -25,5 +24,4 @@ COPY --from=BUILD_IMAGE /usr/src/app/dist ./dist
 
 EXPOSE 3000
 
-# CMD /bin/sh -c "npx prisma migrate deploy && npm run start:prod"
 CMD /bin/sh -c "npm run start:prod"
