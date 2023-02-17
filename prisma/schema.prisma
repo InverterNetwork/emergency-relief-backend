@@ -49,6 +49,8 @@ model ProjectDonationWallet {
   chainId Int    @map("chain_id")
   address String
 
+  transaction Transaction[]
+
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
@@ -129,9 +131,39 @@ model Project {
   credentials     ProjectCredentials[]
   categories      ProjectCategory[]
   partners        ProjectPartner[]
+  transactions    Transaction[]
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("projects")
+}
+
+enum TransactionStatus {
+  PENDING
+  SUCCESS
+  FAIL
+}
+
+model Transaction {
+  id Int @id @default(autoincrement())
+
+  transactionHash String @map("transaction_hash")
+
+  fromWallet String @map("from_wallet")
+
+  toWallet   ProjectDonationWallet @relation(fields: [toWalletId], references: [id])
+  toWalletId Int                   @map("to_wallet_id")
+
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int     @map("project_id")
+
+  token  String
+  amount String
+  status TransactionStatus @default(PENDING)
+
+  createdAt   DateTime  @default(now()) @map("created_at")
+  completedAt DateTime? @map("completed_at")
+
+  @@map("transactions")
 }
