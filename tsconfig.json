@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "moduleResolution": "node",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@er/configs": ["src/libs/configs/src/index.ts"],
+      "@er/exceptions": ["src/libs/exceptions/src/index.ts"],
+      "@er/factories": ["src/libs/factories/src/index.ts"],
+      "@er/filters": ["src/libs/filters/src/index.ts"],
+      "@er/loggers": ["src/libs/loggers/src/index.ts"],
+      "@er/interceptors": ["src/libs/interceptors/src/index.ts"],
+      "@er/pipes": ["src/libs/pipes/src/index.ts"],
+      "@er/utils": ["src/libs/utils/src/index.ts"]
+    }
+  }
+}
