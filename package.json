@@ -26,6 +26,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/platform-fastify": "^9.3.9",
     "@nestjs/swagger": "^6.2.1",
+    "@nestjs/throttler": "^4.0.0",
     "@prisma/client": "^4.10.1",
     "aws-sdk": "^2.1317.0",
     "change-case": "^4.1.2",
