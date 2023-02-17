@@ -7,6 +7,6 @@ export class InvalidEnvironmentException extends BaseException {
   constructor(env: string) {
     const name = EnvironmentExceptionName.InvalidEnvironmentException;
     const status = 500;
-    super(name, status, `"${env}" is not a valid envrionment!`);
+    super(name, status, `"${env}" is not a valid environment!`);
   }
 }
