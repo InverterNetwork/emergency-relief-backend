@@ -19,7 +19,7 @@ WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
-RUN npm ci --production
+RUN npm ci
 
 COPY --from=BUILD_IMAGE /usr/src/app/dist ./dist
 
