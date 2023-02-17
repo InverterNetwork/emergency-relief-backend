@@ -19,6 +19,8 @@ WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
+RUN npm ci --production
+
 COPY --from=BUILD_IMAGE /usr/src/app/dist ./dist
 
 EXPOSE 3000
