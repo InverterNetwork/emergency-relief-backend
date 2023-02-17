@@ -42,6 +42,10 @@ export class ProjectsService {
         socialProfiles: true,
         credentials: true,
         partners: true,
+        transactions: {
+          orderBy: { createdAt: 'desc' },
+          take: 10,
+        },
       },
     });
   }
