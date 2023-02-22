@@ -43,6 +43,9 @@ export class ProjectsService {
         credentials: true,
         partners: true,
         transactions: {
+          include: {
+            toWallet: true,
+          },
           orderBy: { createdAt: 'desc' },
           take: 10,
         },
