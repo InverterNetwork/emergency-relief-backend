@@ -21,7 +21,7 @@ export class ProjectsController {
     return this.projectsService.findOneById(params.id);
   }
 
-  @Get('/:slug')
+  @Get('/slug/:slug')
   async findOneBySlug(@Param() params: FindOneBySlugParamsDto): Promise<Project> {
     return this.projectsService.findOneBySlug(params.slug);
   }
