@@ -52,4 +52,24 @@ export class ProjectsService {
       },
     });
   }
+
+  async findOneBySlug(slug: string): Promise<Project> {
+    return this.prisma.project.findUnique({
+      where: { slug },
+      include: {
+        donationWallets: true,
+        categories: true,
+        socialProfiles: true,
+        credentials: true,
+        partners: true,
+        transactions: {
+          include: {
+            toWallet: true,
+          },
+          orderBy: { createdAt: 'desc' },
+          take: 10,
+        },
+      },
+    });
+  }
 }

@@ -27,6 +27,7 @@ model Organization {
   id Int @id @default(autoincrement())
 
   name            String
+  slug            String? @unique
   profileImageUrl String? @map("profile_image_url")
   bannerImageUrl  String? @map("banner_image_url")
 
@@ -113,6 +114,7 @@ model ProjectPartner {
 model Project {
   id Int @id @default(autoincrement())
 
+  slug    String?      @unique
   owner   Organization @relation(fields: [ownerId], references: [id])
   ownerId Int          @map("owner_id")
 
